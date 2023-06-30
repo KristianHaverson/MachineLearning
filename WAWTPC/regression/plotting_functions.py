@@ -65,8 +65,8 @@ def plotEvent(data, model):
             plotEndpoints(modelResponse, iProj, axis, color="blue", label="NN")         
         axis.set_xlabel("time bin")
         axis.set_ylabel(projNames[iProj]+" strip")
-        ##axis.set_xlim(sx.start-5, sx.stop+5)
-        ##axis.set_ylim(sy.start-5, sy.stop+5)
+        axis.set_xlim(sx.start-5, sx.stop+5)
+        axis.set_ylim(sy.start-5, sy.stop+5)
         axis.legend()
         
         divider = make_axes_locatable(axis)
